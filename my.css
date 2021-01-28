@@ -1,15 +1,32 @@
-.app {
+.container {
   max-width: 600px;
   margin: 30px auto;
+}
+.app {
   border: 1px solid grey;
   border-radius: 10px;
   padding: 20px;
   font-family: "Inconsolata", monospace;
   color: black;
 }
+form {
+  float: right;
+}
+.enter {
+  border: 1px solid #f7f7f7;
+}
+
+.value {
+  border: 1px solid #f7f7f7;
+}
+
+h2 {
+  font-size: 20px;
+}
 .sun {
   color: yellow;
   font-size: 50px;
+  float: left;
 }
 .temperature {
   margin: 0 0 30px 0;
@@ -21,9 +38,20 @@ ul {
 }
 .marta {
   text-decoration: none;
-  color: green;
+  color: #19b54c;
 }
 .marta:hover {
   text-decoration: underline;
-  color: green;
+  color: #19b54c;
+}
+small {
+  margin: 0 5px 00;
+}
+strong {
+  font-size: 50px;
+  padding: 0 0 0 7px;
+}
+.units {
+  position: relative;
+  top: -28px;
 }
