@@ -36,6 +36,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+#sky {
+  text-transform: capitalize;
+}
 .marta {
   text-decoration: none;
   color: #19b54c;
