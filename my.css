@@ -16,7 +16,7 @@ form {
   border: 1px solid #f7f7f7;
 }
 
-.value {
+.butt {
   border: 1px solid #f7f7f7;
 }
 
@@ -36,8 +36,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+#feelsLike {
+  font-size: 15px;
+}
 #sky {
   text-transform: capitalize;
+  font-size: 15px;
 }
 .marta {
   text-decoration: none;

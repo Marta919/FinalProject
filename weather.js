@@ -18,16 +18,6 @@ return `${day}, ${hours}:${minutes}`;
 
 let now = document.querySelector("#time");
 now.innerHTML = date(time);
-
-
-
-
-
-
-
-
-
-
 function displayTemperature (response){
 let temperature = document.querySelector("#temp");
 let selectedCity = document.querySelector("#city");
@@ -36,9 +26,14 @@ selectedCity.innerHTML = response.data.name;
 document.querySelector("#sky").innerHTML= response.data.weather[0].description;
 document.querySelector("#humidity").innerHTML= `Humidity:${Math.round(response.data.main.humidity)}%`;
 document.querySelector("#wind").innerHTML= `Wind Speed:${Math.round(response.data.wind.speed)}km/h`;
+document.querySelector("#feelsLike").innerHTML = `Perceived:${Math.round(response.data.main.feels_like)}`;
 }
-
-let apiKey = "e8cf93c11b2e03971616c05c042f7ad8"; 
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Helsinki&appid=${apiKey}&units=metric`;
-
-axios.get(apiUrl).then(displayTemperature);
+function search(event){
+    event.preventDefault();
+    let city = document.querySelector(".enter").value;
+    let apiKey = "e8cf93c11b2e03971616c05c042f7ad8";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
+    axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
+}
+let form = document.querySelector("#submit-city");
+form.addEventListener("submit", search);
