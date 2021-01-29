@@ -21,8 +21,9 @@ now.innerHTML = date(time);
 function displayTemperature (response){
 let temperature = document.querySelector("#temp");
 let selectedCity = document.querySelector("#city");
-temperature.innerHTML = Math.round(response.data.main.temp);
-let name = response.data.name;
+celsiusTemperature = Math.round(response.data.main.temp);
+temperature.innerHTML = celsiusTemperature;
+ let name = response.data.name;
 let country = response.data.sys.country;
 selectedCity.innerHTML = `${name},${country}`;
 document.querySelector("#sky").innerHTML= response.data.weather[0].description;
@@ -40,10 +41,29 @@ function search(event){
     let apiKey = "e8cf93c11b2e03971616c05c042f7ad8";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
     axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
-
-far.innerHTML = `${Math.round(response.data.main.temp * 9/15)+32}`;
+    cels.innerHTML = `°C`;
+  
+    far.innerHTML = `|°F`;
 }
 let form = document.querySelector("#submit-city");
 form.addEventListener("submit", search);
 let far = document.querySelector(".farenheit");
-far.addEventListener ("click", dshowCelsius);
+let celsiusTemperature = null;
+let cels = document.querySelector(".celsius");
+function showFarenheit(event) {
+    event.preventDefault();
+  let temperature = document.querySelector("#temp");
+  let farenheitTemperature = (celsiusTemperature * 9)/5+32;
+  temperature.innerHTML = Math.round(farenheitTemperature);
+  
+}
+function showCelsius (event){
+    event.preventDefault();
+    let temperature = document.querySelector("#temp");
+    temperature.innerHTML = celsiusTemperature;
+    cels.classList.remove("hover");   
+    far.classList.add("hover");
+}
+
+cels.addEventListener ("click", showCelsius);
+far.addEventListener ("click", showFarenheit);
