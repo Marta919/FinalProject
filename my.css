@@ -16,11 +16,17 @@ form {
   font-size: 15px;
 }
 .enter {
-  border: 1px solid #f7f7f7;
+  border: 1px solid #19b54c;
+  border-radius: 10px;
+}
+.enter:hover {
+  border: 1px solid #19b54c;
 }
 
 .butt {
-  border: 1px solid #f7f7f7;
+  border: 1px solid #19b54c;
+  border-radius: 10px;
+  background-color: white;
 }
 h1 {
   font-weight: bold;
@@ -41,6 +47,7 @@ h2 {
 }
 .temperature {
   margin: 10px 0 25px 0;
+  color: #19b54c;
 }
 
 .celsius {
@@ -86,6 +93,7 @@ ul,
 #sky {
   text-transform: capitalize;
   font-size: 15px;
+  font-style: italic;
 }
 .marta {
   text-decoration: none;
