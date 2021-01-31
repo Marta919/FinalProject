@@ -80,8 +80,6 @@ forecastElement.innerHTML = forecastElement.innerHTML +
 ${Math.round(forecast.main.temp)}°C
 </div>
 </div>`
-
-
 }
 
 let now = document.querySelector("#time");

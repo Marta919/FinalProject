@@ -1,5 +1,5 @@
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 30px auto;
 }
 .app {
@@ -22,20 +22,25 @@ form {
 .butt {
   border: 1px solid #f7f7f7;
 }
-h1,
+h1 {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px 0 0 0;
+  line-height: 15px;
+}
 #time {
   font-weight: bold;
   font-size: 20px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 15px;
 }
 #icon {
   float: left;
   width: 90px;
 }
 .temperature {
-  margin: 0 0 30px 0;
+  margin: 10px 0 25px 0;
 }
 .celsius {
   text-decoration: none;
@@ -70,9 +75,11 @@ h2 {
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
 }
-
+#info {
+  margin: 20px 0 0 0;
+}
 #sky {
   text-transform: capitalize;
   font-size: 15px;
@@ -85,9 +92,7 @@ ul {
   text-decoration: underline;
   color: #19b54c;
 }
-#week {
-  margin: 30px;
-}
+
 small {
   margin: 0 5px 00;
 }
@@ -100,5 +105,10 @@ strong {
   top: -28px;
 }
 #forecast {
-  margin: 15px 0 0 0;
+  margin: 15px 20px 0 20px;
+}
+.col-3 {
+  float: right;
+  margin: 0 auto;
+  padding: 0 50px 0 0;
 }
