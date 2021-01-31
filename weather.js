@@ -40,7 +40,7 @@ function displayForecast (response){
 let forecastElement = document.querySelector("#forecast");
 let forecast= response.data.list[0];
 forecastElement.innerHTML = 
-`<div class="col-2">
+`<div class="col-3">
 <h3>${formatHour (forecast.dt * 1000)}</h3>
 <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" id="image"
 > 
@@ -51,7 +51,7 @@ ${Math.round(forecast.main.temp)}°C
 
 forecast = response.data.list[1];
 forecastElement.innerHTML = forecastElement.innerHTML +
-`<div class="col-2">
+`<div class="col-3">
 <h3>${formatHour (forecast.dt * 1000)}</h3>
 <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" id="image"
 > 
@@ -62,7 +62,7 @@ ${Math.round(forecast.main.temp)}°C
 
 forecast = response.data.list[2];
 forecastElement.innerHTML = forecastElement.innerHTML +
-`<div class="col-2">
+`<div class="col-3">
 <h3>${formatHour (forecast.dt * 1000)}</h3>
 <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" id="image"
 > 
@@ -72,7 +72,7 @@ ${Math.round(forecast.main.temp)}°C
 </div>`
 forecast = response.data.list[3];
 forecastElement.innerHTML = forecastElement.innerHTML +
-`<div class="col-2">
+`<div class="col-3">
 <h3>${formatHour (forecast.dt * 1000)}</h3>
 <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" id="image"
 > 
@@ -80,26 +80,8 @@ forecastElement.innerHTML = forecastElement.innerHTML +
 ${Math.round(forecast.main.temp)}°C
 </div>
 </div>`
-forecast = response.data.list[4];
-forecastElement.innerHTML = forecastElement.innerHTML +
-`<div class="col-2">
-<h3>${formatHour (forecast.dt * 1000)}</h3>
-<img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" id="image"
-> 
-<div class="forecast-tempeature">
-${Math.round(forecast.main.temp)}°C
-</div>
-</div>`
-forecast = response.data.list[5];
-forecastElement.innerHTML = forecastElement.innerHTML +
-`<div class="col-2">
-<h3>${formatHour (forecast.dt * 1000)}</h3>
-<img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" id="image"
-> 
-<div class="forecast-tempeature">
-${Math.round(forecast.main.temp)}°C
-</div>
-</div>`
+
+
 }
 
 let now = document.querySelector("#time");

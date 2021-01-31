@@ -1,5 +1,5 @@
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 30px auto;
 }
 .app {
@@ -25,6 +25,7 @@ form {
 h1,
 #time {
   font-weight: bold;
+  font-size: 20px;
 }
 h2 {
   font-size: 20px;
@@ -97,4 +98,7 @@ strong {
 .units {
   position: relative;
   top: -28px;
+}
+#forecast {
+  margin: 15px 0 0 0;
 }
