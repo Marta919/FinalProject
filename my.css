@@ -1,3 +1,7 @@
+body {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
 .container {
   max-width: 600px;
   margin: 30px auto;
@@ -8,6 +12,7 @@
   padding: 20px;
   font-family: "Inconsolata", monospace;
   color: black;
+  background-color: white;
 }
 form {
   float: right;
@@ -20,7 +25,7 @@ form {
   border-radius: 10px;
 }
 .enter:hover {
-  border: 1px solid #grey;
+  border: 1px solid grey;
 }
 
 .butt {
@@ -32,7 +37,7 @@ h1 {
   font-weight: bold;
   font-size: 25px;
   margin: 10px 0 0 0;
-  line-height: 15px;
+  line-height: 10px;
 }
 #time {
   font-weight: bold;
@@ -40,17 +45,19 @@ h1 {
 }
 h2 {
   font-size: 15px;
-  line-height: 30px;
+  line-height: 25px;
 }
 #icon {
   float: left;
   width: 90px;
 }
 .temperature {
-  margin: 10px -5px 20px 0;
+  margin: 10px 0 10px -20px;
   color: #19b54c;
 }
-
+#temp {
+  font-size: 50px;
+}
 .celsius {
   text-decoration: none;
   color: black;
