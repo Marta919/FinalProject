@@ -3,7 +3,7 @@
   margin: 30px auto;
 }
 .app {
-  border: 1px solid grey;
+  border: 1px solid #19b54c;
   border-radius: 10px;
   padding: 20px;
   font-family: "Inconsolata", monospace;
@@ -16,15 +16,15 @@ form {
   font-size: 15px;
 }
 .enter {
-  border: 1px solid #19b54c;
+  border: 1px solid grey;
   border-radius: 10px;
 }
 .enter:hover {
-  border: 1px solid #19b54c;
+  border: 1px solid #grey;
 }
 
 .butt {
-  border: 1px solid #19b54c;
+  border: 1px solid grey;
   border-radius: 10px;
   background-color: white;
 }
@@ -40,13 +40,14 @@ h1 {
 }
 h2 {
   font-size: 15px;
+  line-height: 30px;
 }
 #icon {
   float: left;
   width: 90px;
 }
 .temperature {
-  margin: 10px 0 25px 0;
+  margin: 10px -5px 20px 0;
   color: #19b54c;
 }
 
@@ -97,11 +98,11 @@ ul,
 }
 .marta {
   text-decoration: none;
-  color: #19b54c;
+  color: grey;
 }
 .marta:hover {
   text-decoration: underline;
-  color: #19b54c;
+  color: grey;
 }
 
 small {
