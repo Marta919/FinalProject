@@ -125,7 +125,7 @@ strong {
   margin: 15px 20px 0 20px;
 }
 .col-3 {
-  float: right;
+  float: left;
   margin: 0 auto;
   padding: 0 50px 0 0;
 }
